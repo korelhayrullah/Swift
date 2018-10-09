@@ -56,7 +56,7 @@ class OrderCoffeeViewController: BaseViewController {
     removeButton
       .rx
       .tap
-      .debug("addButton", trimOutput: true)
+      .debug("removeButton", trimOutput: true)
       .subscribe(onNext: { [weak self] in
         self?.updateUI(increment: false)
       })
